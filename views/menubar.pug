@@ -1,0 +1,30 @@
+nav.navbar.navbar-expand-lg.navbar-light
+  a.navbar-brand(href='/',data-toggle="tooltip",data-placement="bottom",title="Home")
+    img(src="/img/BlinkyLogo-Text.png" ,height="50px")
+  //button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  //#navbarNavDropdown.collapse.navbar-collapse
+  #navbarNavDropdown.navbar-expand
+    ul.navbar-nav
+      li.nav-item.active
+        a.nav-link.fas.fa-home.fa-2x(href='/',data-toggle="tooltip",data-placement="bottom",title="Home")
+          span.sr-only (current)
+      li.nav-item
+        a.nav-link.fas.fa-glasses.fa-2x(href='/readmore',data-toggle="tooltip",data-placement="bottom",title="Read More")
+      li.nav-item
+        a.nav-link.fas.fa-lightbulb.fa-2x(href='/examples',data-toggle="tooltip",data-placement="bottom",title="Examples") 
+      li.nav-item.dropdown
+        a#navbarDropdownMenuLink.nav-link.dropdown-toggle.fas.fa-book.fa-2x(href='#' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false', target='_blank',data-placement="bottom",title="Tutorial")
+        .dropdown-menu(aria-labelledby='navbarDropdownMenuLink',style='background-color: #557a95;')
+          a.dropdown-item(href='/tutorial') Overview
+          a.dropdown-item(href='/tutorial/setupRPi') Setting Up a Raspberry-Pi for Blinky-Lite
+          a.dropdown-item(href='/tutorial/blinkyCircuit') Constructing a Blinky-Lite Circuit
+          a.dropdown-item(href='/tutorial/dma') Building a Device Message Adapter (DMA)
+          a.dropdown-item(href='/tutorial/gui') Building a User Interface
+      li.nav-item
+        a.nav-link.fab.fa-github.fa-2x(href='https://github.com/Blinky-Lite', target='_blank',data-toggle="tooltip",data-placement="bottom",title="Github")
+      li.nav-item
+        a.nav-link.fab.fa-twitter.fa-2x(href='https://twitter.com/BlinkyLite', target='_blank',data-toggle="tooltip",data-placement="bottom",title="Twitter")
+      li.nav-item
+        a.nav-link.fas.fa-envelope.fa-2x(href='mailto:info@blinky-lite.io',data-toggle="tooltip",data-placement="bottom",title="Contact")
+        //a.nav-link.fas.fa-envelope.fa-2x(href='/contact',data-toggle="tooltip",data-placement="bottom",title="Contact")
